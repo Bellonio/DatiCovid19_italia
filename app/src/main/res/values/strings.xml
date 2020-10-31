@@ -44,7 +44,7 @@
     <!--TODO URL GitHub-->
 
     <string name="lblEmail_di_contatto">bellonegiulio@gmail.com</string>
-    <string name="lblUrl_accountGitHub">da segnare</string>
+    <string name="lblUrl_accountGitHub">https://github.com/Bellonio/DatiCovid19_italia</string>
 
     <!--                LICENZA layout                              -->
     <string name="lblLicenza_Licenza">
