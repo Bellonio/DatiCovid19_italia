@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listViewAndamenti_Main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutDatiTotali_Main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdGroupTipoOrdine_Main" />
+
+    <RadioGroup
+        android:id="@+id/rdGroupNazReg_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdBtnNazionale_Main"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/rdBtnNazionale_Main"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rdBtnRegionale_Main"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/rdBtnRegionale_Main"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layoutSpnOrdinamento_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/lblOrdineDati_Main"
+        app:layout_constraintTop_toBottomOf="@+id/rdGroupNazReg_Main">
+
+        <Spinner
+            android:id="@+id/spnOrdinamento_Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblOrdineDati_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/lblOrdineDati_Main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdGroupNazReg_Main" />
+
+    <RadioGroup
+        android:id="@+id/rdGroupTipoOrdine_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdGroupNazReg_Main">
+
+        <RadioButton
+            android:id="@+id/rdBtnAscendente_Main"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:gravity="center"
+            android:text="@string/rdBtnAscendente_Main" />
+
+        <RadioButton
+            android:id="@+id/rdBtnDiscendente_Main"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/rdBtnDiscendente_Main" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxAlfab_Main"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="center"
+        android:text="@string/checkBoxAlfab_Main"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdGroupNazReg_Main" />
+
+    <LinearLayout
+        android:id="@+id/layoutDatiTotali_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_weight="1"
+            android:background="#CC773E"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/lblInfoTotale_Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/lblInfoTotale_Main" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblInfoTotaleCasi_Main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lblInfoTotaleCasi_Main"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lblTotaleCasi_Main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblInfoTotaleDecessi_Main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lblInfoTotaleDecessi_Main"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lblTotaleDecessi_Main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spnSceltaRegione_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdGroupNazReg_Main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

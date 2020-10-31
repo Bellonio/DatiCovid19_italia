@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Dati Covid19 In Italia</string>
+
+    <!--                MAIN layout                              -->
+    <string name="lblInfo_Main">Dati Covid-19 in italia aggiornati GIORNALMENTE alle 17:00</string>
+    <string name="rdBtnNazionale_Main">Andamento NAZIONALE</string>
+    <string name="rdBtnRegionale_Main">Andamento REGIONALE</string>
+    <string name="lblOrdineDati_Main">Ordina dati:</string>
+    <string name="rdBtnAscendente_Main">ASCENDENTE (dal minore al maggiore)</string>
+    <string name="rdBtnDiscendente_Main">DISCENDENTE (dal maggiore al minore)</string>
+    <string name="rdBtnAsc_Main">ASCENDENTE</string>
+    <string name="rdBtnDisc_Main">DISCENDENTE</string>
+    <string name="checkBoxAlfab_Main">Per GIORNATE\n(o IN ASSOLUTO)</string>
+
+    <string name="lblInfoTotale_Main">(DA INIZIO PANDEMIA)</string>
+    <string name="lblInfoTotaleCasi_Main">Totale casi:</string>
+    <string name="lblInfoTotaleDecessi_Main">Totale deceduti:</string>
+
+
+    <!--                ANDAMENTO layout                              -->
+    <string name="lblInfoNuoviPositivi_Andamento">Nuovi positivi:</string>
+    <string name="lblInfoTamponi_Andamento">Tamponi effettuati:</string>
+    <string name="lblInfoPositiviOspedale_Andamento">Positivi ricoverati in ospedale:</string>
+    <string name="lblInfoTerIntensiva_Andamento">Di cui in terapia intensiva:</string>
+    <string name="lblInfoGuariti_Andamento">Guariti oggi:</string>
+    <string name="lblInfoDeceduti_Andamento">Deceduti oggi:</string>
+
+    <!--                IMPOSTAZIONI layout                              -->
+    <string name="lblInfoOra_Impostazioni">Gli andamenti sono giornalmente aggiornati alle ore:\t18:00</string>
+    <string name="lblInfoNazreg_Impostazioni">Quale ANDAMENTO vuoi che sia visualizzato di DEFAULT\n(all\'avvio dell\'app)</string>
+    <string name="rdBtnNazionale_Impostazioni">NAZIONALE</string>
+    <string name="rdBtnRegionale_Impostazioni">REGIONALE</string>
+    <string name="lblInfoSpiegazioni_Impostazioni">PIÙ sono le giornate che devo LEGGERE\nPIÙ tempo
+        IMPIEGHERÒ per leggerle e ordinarle,\nperciò scegli:</string>
+    <string name="lblInfoQtaNaz_Impostazioni">Quanti giorni dovrò leggere\nper l\'andamento NAZIONALE ?</string>
+    <string name="lblInfoQtaReg_Impostazioni">Quanti giorni dovrò leggere\nper l\'andamento REGIONALE ?</string>
+
+    <string name="btnTornaIndietro_Impostazioni">SALVA E\nTORNA INDIETRO</string>
+
+    <string name="lblInfoEmail_Impostazioni">Per qualsiasi problema con l\'app puoi\ncontattarmi via email.\n
+        Oppure se vuoi darmi consigli per migliorare l\'app.</string>
+    <string name="lblInfoGitHub_Impostazioni">Ti ricordo che l\'intero codice dell\'app
+        e\' disponibile sulla piattaforma GitHub a questo URL: </string>
+    <!--TODO URL GitHub-->
+
+    <string name="lblEmail_di_contatto">bellonegiulio@gmail.com</string>
+    <string name="lblUrl_accountGitHub">da segnare</string>
+
+    <!--                LICENZA layout                              -->
+    <string name="lblLicenza_Licenza">
+
+        Tutti i dati mostrati in quest\'applicazione sono letti dal repository GitHub ufficiale del
+        <b>Dipartimento della Protezione Civile</b> a questo indirizzo:
+
+    </string>
+    <string name="lblUrlRepGitHub_Licenza"><u>https://github.com/pcm-dpc/COVID-19</u></string>
+    <string name="lblLicenza2_Licenza">I dati sono offerti sotto la <b>licenza CC-BY-4.0:</b></string>
+    <string name="lblUrlLicenza_Licenza"><u>https://creativecommons.org/licenses/by/4.0/legalcode.it</u></string>
+
+    <string name="btnTornaIndietro_Licenza">Torna alla schermata degli andamenti.</string>
+
+
+</resources>
